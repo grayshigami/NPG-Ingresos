@@ -1,0 +1,94 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <SpaRoot>..\aplicacionnpg.client</SpaRoot>
+    <SpaProxyLaunchCommand>npm run dev</SpaProxyLaunchCommand>
+    <SpaProxyServerUrl>https://localhost:5173</SpaProxyServerUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\assets\cambiar-contrasena-CipJhfia.js" />
+    <Content Remove="wwwroot\assets\cambiar-contrasena-cn0FfjrL.css" />
+    <Content Remove="wwwroot\assets\crear-usuario-BIQNEPeY.js" />
+    <Content Remove="wwwroot\assets\crear-usuario-CwxUT9jk.css" />
+    <Content Remove="wwwroot\assets\editar-incidencia-D8Knc2io.css" />
+    <Content Remove="wwwroot\assets\editar-incidencia-Dp5HWtos.js" />
+    <Content Remove="wwwroot\assets\editar-usuario-B0tQ3hjZ.css" />
+    <Content Remove="wwwroot\assets\editar-usuario-EjEojdvl.js" />
+    <Content Remove="wwwroot\assets\html2canvas.esm-CBrSDip1.js" />
+    <Content Remove="wwwroot\assets\index-BF6LzyhM.js" />
+    <Content Remove="wwwroot\assets\index-D6hfMaVG.css" />
+    <Content Remove="wwwroot\assets\index.es-DLu1Y0Wf.js" />
+    <Content Remove="wwwroot\assets\jspdf.es.min-Dj0cXDGD.js" />
+    <Content Remove="wwwroot\assets\lista-usuarios-CSt_D8aO.js" />
+    <Content Remove="wwwroot\assets\lista-usuarios-CT1esNrJ.css" />
+    <Content Remove="wwwroot\assets\login-BjY9mFLQ.css" />
+    <Content Remove="wwwroot\assets\login-CPJnHiZM.js" />
+    <Content Remove="wwwroot\assets\logo-negro-Sinfondo-DYJ1N-ui.js" />
+    <Content Remove="wwwroot\assets\logo-negro-Sinfondo-mPDJPZ52.png" />
+    <Content Remove="wwwroot\assets\pantalla-administrador-BmOSQrx1.js" />
+    <Content Remove="wwwroot\assets\pantalla-administrador-CNKjpryJ.css" />
+    <Content Remove="wwwroot\assets\pantalla-usuario-BwbMCkdh.css" />
+    <Content Remove="wwwroot\assets\pantalla-usuario-C1RTGZxu.js" />
+    <Content Remove="wwwroot\assets\purify.es-DGIRlouP.js" />
+    <Content Remove="wwwroot\assets\registrar-incidencia-Bgu7UoJa.js" />
+    <Content Remove="wwwroot\assets\registrar-incidencia-CqFh45Ln.css" />
+    <Content Remove="wwwroot\assets\_commonjsHelpers-C4iS2aBk.js" />
+    <Content Remove="wwwroot\favicon.ico" />
+    <Content Remove="wwwroot\index.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SpaProxy">
+      <Version>8.*-*</Version>
+    </PackageReference>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8" />
+    <PackageReference Include="Microsoft.OpenApi" Version="1.6.21" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\aplicacionnpg.client\aplicacionnpg.client.esproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\cambiar-contrasena-CipJhfia.js" />
+    <None Include="wwwroot\assets\cambiar-contrasena-cn0FfjrL.css" />
+    <None Include="wwwroot\assets\crear-usuario-BIQNEPeY.js" />
+    <None Include="wwwroot\assets\crear-usuario-CwxUT9jk.css" />
+    <None Include="wwwroot\assets\editar-incidencia-D8Knc2io.css" />
+    <None Include="wwwroot\assets\editar-incidencia-Dp5HWtos.js" />
+    <None Include="wwwroot\assets\editar-usuario-B0tQ3hjZ.css" />
+    <None Include="wwwroot\assets\editar-usuario-EjEojdvl.js" />
+    <None Include="wwwroot\assets\html2canvas.esm-CBrSDip1.js" />
+    <None Include="wwwroot\assets\index-BF6LzyhM.js" />
+    <None Include="wwwroot\assets\index-D6hfMaVG.css" />
+    <None Include="wwwroot\assets\index.es-DLu1Y0Wf.js" />
+    <None Include="wwwroot\assets\jspdf.es.min-Dj0cXDGD.js" />
+    <None Include="wwwroot\assets\lista-usuarios-CSt_D8aO.js" />
+    <None Include="wwwroot\assets\lista-usuarios-CT1esNrJ.css" />
+    <None Include="wwwroot\assets\login-BjY9mFLQ.css" />
+    <None Include="wwwroot\assets\login-CPJnHiZM.js" />
+    <None Include="wwwroot\assets\logo-negro-Sinfondo-DYJ1N-ui.js" />
+    <None Include="wwwroot\assets\logo-negro-Sinfondo-mPDJPZ52.png" />
+    <None Include="wwwroot\assets\pantalla-administrador-BmOSQrx1.js" />
+    <None Include="wwwroot\assets\pantalla-administrador-CNKjpryJ.css" />
+    <None Include="wwwroot\assets\pantalla-usuario-BwbMCkdh.css" />
+    <None Include="wwwroot\assets\pantalla-usuario-C1RTGZxu.js" />
+    <None Include="wwwroot\assets\purify.es-DGIRlouP.js" />
+    <None Include="wwwroot\assets\registrar-incidencia-Bgu7UoJa.js" />
+    <None Include="wwwroot\assets\registrar-incidencia-CqFh45Ln.css" />
+    <None Include="wwwroot\assets\_commonjsHelpers-C4iS2aBk.js" />
+    <None Include="wwwroot\favicon.ico" />
+    <None Include="wwwroot\index.html" />
+  </ItemGroup>
+
+</Project>

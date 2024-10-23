@@ -1,0 +1,6 @@
+@AplicacionNPG.Server_HostAddress = http://localhost:5215
+
+GET {{AplicacionNPG.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
